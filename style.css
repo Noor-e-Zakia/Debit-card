@@ -1,0 +1,83 @@
+.front,.back {
+    width: 450px;
+    height: 250px;
+    background-color: rgb(39, 103, 180);
+    box-shadow: 10px 10px 5px grey;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}
+
+.thecard {
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 0.5 ease;
+
+}
+
+.thecard:hover {
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+
+}
+
+.front {
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+
+.back {
+    position: relative;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+
+}
+
+.bank {
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card-numb {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+.exp {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.name {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.back h5 {
+    font-size: smaller;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bar {
+    background-color: black;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.white-bar p {
+    background-color: white;
+    width: 400px;
+    padding-left: 350px;
+    font-weight: 500;
+}
+
+.info {
+    font-weight: lighter;
+    font-size: x-small;
+}
